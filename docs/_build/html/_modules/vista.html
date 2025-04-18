@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>vista &mdash; MiProyecto 0.0.1 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/fonts.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=d45e8c67"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            MiProyecto
+          </a>
+              <div class="version">
+                0.0.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../controlador.html">controlador module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../misRegex.html">misRegex module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modelo.html">modelo module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vista.html">vista module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../widgets.html">widgets module</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">MiProyecto</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Module code</a></li>
+      <li class="breadcrumb-item active">vista</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for vista</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">vista.py:</span>
+<span class="sd">    El script almacena todo lo relacionado con la interfaz gráfica Tkinter.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="kn">from</span> <span class="nn">tkinter</span> <span class="kn">import</span> <span class="n">StringVar</span>
+<span class="kn">from</span> <span class="nn">tkinter</span> <span class="kn">import</span> <span class="n">ttk</span>
+<span class="kn">from</span> <span class="nn">tkinter</span> <span class="kn">import</span> <span class="n">messagebox</span>
+
+<span class="kn">from</span> <span class="nn">modelo</span> <span class="kn">import</span> <span class="n">Abcm</span>
+<span class="kn">from</span> <span class="nn">modelo</span> <span class="kn">import</span> <span class="n">InteraccionBD</span>
+
+<span class="kn">from</span> <span class="nn">widgets</span> <span class="kn">import</span> <span class="n">MiBoton</span><span class="p">,</span> <span class="n">MiEntry</span><span class="p">,</span> <span class="n">MiLabel</span>
+
+<span class="n">objeto</span> <span class="o">=</span> <span class="n">Abcm</span><span class="p">()</span>
+<span class="n">objetoBase</span> <span class="o">=</span> <span class="n">InteraccionBD</span><span class="p">()</span>
+
+
+<div class="viewcode-block" id="Vista">
+<a class="viewcode-back" href="../vista.html#vista.Vista">[docs]</a>
+<span class="k">class</span> <span class="nc">Vista</span><span class="p">():</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">window</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">widgets</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        El constructor inicializa el *root* de tkinter y la configura, con su *título*, *backgroud*, *buttons*, *treeview*, *labels*, una *combobox* y los *entrys*.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">root</span> <span class="o">=</span> <span class="n">window</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">root</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;PS COSMÉTICA&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">root</span><span class="o">.</span><span class="n">resizable</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">root</span><span class="o">.</span><span class="n">config</span><span class="p">(</span><span class="n">bg</span><span class="o">=</span><span class="s2">&quot;#F0C266&quot;</span><span class="p">)</span>
+
+        <span class="c1"># BASE DE DATOS Y TABLA----------------------------------------------------------------</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        El botón: *boton_db* permite conectarse a la *base de datos* previamente a realizar cualquier acción.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">boton_db</span> <span class="o">=</span> <span class="n">MiBoton</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">root</span><span class="p">,</span>
+            <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Conectarse a la Base de Datos&quot;</span><span class="p">,</span>
+            <span class="n">command</span><span class="o">=</span><span class="k">lambda</span><span class="p">:</span><span class="bp">self</span><span class="o">.</span><span class="n">conectar_base</span><span class="p">(),</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">boton_db</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">row</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">widgets</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">boton_db</span><span class="p">)</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        El boton: *boton_table* permite crear la tabla *Productos* en la *base de datos*.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">boton_table</span> <span class="o">=</span> <span class="n">MiBoton</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">root</span><span class="p">,</span>
+            <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Crear Tabla Productos&quot;</span><span class="p">,</span>
+            <span class="n">command</span><span class="o">=</span><span class="k">lambda</span><span class="p">:</span><span class="bp">self</span><span class="o">.</span><span class="n">crear_tabla</span><span class="p">(),</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">boton_table</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">row</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">widgets</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">boton_table</span><span class="p">)</span>
+
+        <span class="c1"># INGRESO DE DATOS------------------------------------------------------------------------</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">labe1_p</span> <span class="o">=</span> <span class="n">MiLabel</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">root</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Producto:&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">labe1_p</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">row</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">widgets</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">labe1_p</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">combo</span> <span class="o">=</span> <span class="n">ttk</span><span class="o">.</span><span class="n">Combobox</span><span class="p">(</span>
+            <span class="n">state</span><span class="o">=</span><span class="s2">&quot;readonly&quot;</span><span class="p">,</span>
+            <span class="n">values</span><span class="o">=</span><span class="p">[</span>
+                <span class="s2">&quot;LIDHERMA&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;EXEL&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;IDRAET&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;AP&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;COLONY&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;ZINE&quot;</span><span class="p">,</span>
+            <span class="p">],</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">combo</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">row</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">padx</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">pady</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">sticky</span><span class="o">=</span><span class="s2">&quot;w&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">labe1_l</span> <span class="o">=</span> <span class="n">MiLabel</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">root</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Laboratorio:&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">labe1_l</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">row</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">widgets</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">labe1_l</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">labe1_c</span> <span class="o">=</span> <span class="n">MiLabel</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">root</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Cantidad:&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">labe1_c</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">row</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">widgets</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">labe1_c</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">producto</span> <span class="o">=</span> <span class="n">StringVar</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">laboratorio</span> <span class="o">=</span> <span class="n">StringVar</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">cantidad</span> <span class="o">=</span> <span class="n">StringVar</span><span class="p">()</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">producto_e</span> <span class="o">=</span> <span class="n">MiEntry</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">root</span><span class="p">,</span> <span class="n">textvariable</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">producto</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">producto_e</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">row</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">widgets</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">producto_e</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">cantidad_e</span> <span class="o">=</span> <span class="n">MiEntry</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">root</span><span class="p">,</span> <span class="n">textvariable</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">cantidad</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">cantidad_e</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">row</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">widgets</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">cantidad_e</span><span class="p">)</span>
+        <span class="c1"># TREEVIEW------------------------------------------------------------------------</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Se configura el *treeview*, especificando su número de *columnas* (y el nombre de estas) así como sus *títulos*</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tv</span> <span class="o">=</span> <span class="n">ttk</span><span class="o">.</span><span class="n">Treeview</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">root</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;col1&quot;</span><span class="p">,</span> <span class="s2">&quot;col2&quot;</span><span class="p">,</span> <span class="s2">&quot;col3&quot;</span><span class="p">,</span> <span class="s2">&quot;col4&quot;</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tv</span><span class="o">.</span><span class="n">column</span><span class="p">(</span><span class="s2">&quot;#0&quot;</span><span class="p">,</span> <span class="n">anchor</span><span class="o">=</span><span class="s2">&quot;w&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">80</span><span class="p">,</span> <span class="n">minwidth</span><span class="o">=</span><span class="mi">80</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tv</span><span class="o">.</span><span class="n">heading</span><span class="p">(</span><span class="s2">&quot;#0&quot;</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;id&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tv</span><span class="o">.</span><span class="n">column</span><span class="p">(</span><span class="s2">&quot;col1&quot;</span><span class="p">,</span> <span class="n">anchor</span><span class="o">=</span><span class="s2">&quot;w&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">80</span><span class="p">,</span> <span class="n">minwidth</span><span class="o">=</span><span class="mi">80</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tv</span><span class="o">.</span><span class="n">heading</span><span class="p">(</span><span class="s2">&quot;col1&quot;</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Producto&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tv</span><span class="o">.</span><span class="n">column</span><span class="p">(</span><span class="s2">&quot;col2&quot;</span><span class="p">,</span> <span class="n">anchor</span><span class="o">=</span><span class="s2">&quot;w&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">80</span><span class="p">,</span> <span class="n">minwidth</span><span class="o">=</span><span class="mi">80</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tv</span><span class="o">.</span><span class="n">heading</span><span class="p">(</span><span class="s2">&quot;col2&quot;</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Laboratorio&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tv</span><span class="o">.</span><span class="n">column</span><span class="p">(</span><span class="s2">&quot;col3&quot;</span><span class="p">,</span> <span class="n">anchor</span><span class="o">=</span><span class="s2">&quot;w&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">80</span><span class="p">,</span> <span class="n">minwidth</span><span class="o">=</span><span class="mi">80</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tv</span><span class="o">.</span><span class="n">heading</span><span class="p">(</span><span class="s2">&quot;col3&quot;</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Cantidad&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tv</span><span class="o">.</span><span class="n">column</span><span class="p">(</span><span class="s2">&quot;col4&quot;</span><span class="p">,</span> <span class="n">anchor</span><span class="o">=</span><span class="s2">&quot;w&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">80</span><span class="p">,</span> <span class="n">minwidth</span><span class="o">=</span><span class="mi">80</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tv</span><span class="o">.</span><span class="n">heading</span><span class="p">(</span><span class="s2">&quot;col4&quot;</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Fecha&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tv</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">row</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span> <span class="n">columnspan</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+
+        <span class="c1">#Se activa la funcion seleccion cada vez que se selecciona en el tv </span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tv</span><span class="o">.</span><span class="n">bind</span><span class="p">(</span><span class="s2">&quot;&lt;&lt;TreeviewSelect&gt;&gt;&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">seleccion</span><span class="p">)</span> 
+<span class="w">        </span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        El boton: *boton1* permite realizar el *alta* de productos.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">boton1</span> <span class="o">=</span> <span class="n">MiBoton</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">root</span><span class="p">,</span> 
+            <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Alta&quot;</span><span class="p">,</span>
+            <span class="n">command</span><span class="o">=</span><span class="k">lambda</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">alta</span><span class="p">())</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">boton1</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">row</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">widgets</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">boton1</span><span class="p">)</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        El boton: *boton2* permite realizar la *baja* de productos.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">boton2</span> <span class="o">=</span> <span class="n">MiBoton</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">root</span><span class="p">,</span>
+            <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Baja&quot;</span><span class="p">,</span>
+            <span class="n">command</span><span class="o">=</span><span class="k">lambda</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">baja</span><span class="p">(),</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">boton2</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">row</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">widgets</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">boton2</span><span class="p">)</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        El boton: *boton3* permite realizar la *modificación* de productos.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">boton3</span> <span class="o">=</span> <span class="n">MiBoton</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">root</span><span class="p">,</span>
+            <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Modificación&quot;</span><span class="p">,</span>
+            <span class="n">command</span><span class="o">=</span><span class="k">lambda</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">modificacion</span><span class="p">(),</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">boton3</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">row</span><span class="o">=</span><span class="mi">4</span><span class="p">,)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">widgets</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">boton3</span><span class="p">)</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        La combobox: *combo_temas* permite seleccionar los *temas* de la aplicación.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1">#Combobox para modificar los temas:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">combo_temas</span> <span class="o">=</span> <span class="n">ttk</span><span class="o">.</span><span class="n">Combobox</span><span class="p">(</span>
+            <span class="n">state</span><span class="o">=</span><span class="s2">&quot;readonly&quot;</span><span class="p">,</span>
+            <span class="n">values</span><span class="o">=</span><span class="p">[</span>
+                <span class="s2">&quot;Crema (default)&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;Light&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;Black&quot;</span><span class="p">,</span>
+            <span class="p">],</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">combo_temas</span><span class="o">.</span><span class="n">bind</span><span class="p">(</span><span class="s2">&quot;&lt;&lt;ComboboxSelected&gt;&gt;&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">cambiar_tema</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">combo_temas</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">row</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">padx</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">pady</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">sticky</span><span class="o">=</span><span class="s2">&quot;w&quot;</span><span class="p">)</span>
+
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        La combobox: *combo_bases* permite seleccionar la *base de datos* a utilizar.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1">#Combobox para modificar las bases:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">combo_bases</span> <span class="o">=</span> <span class="n">ttk</span><span class="o">.</span><span class="n">Combobox</span><span class="p">(</span>
+            <span class="n">state</span><span class="o">=</span><span class="s2">&quot;readonly&quot;</span><span class="p">,</span>
+            <span class="n">values</span><span class="o">=</span><span class="p">[</span>
+                <span class="s2">&quot;SQLite3 (default)&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;MySQL&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;Postgres&quot;</span>
+            <span class="p">],</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">combo_bases</span><span class="o">.</span><span class="n">bind</span><span class="p">(</span><span class="s2">&quot;&lt;&lt;ComboboxSelected&gt;&gt;&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">cambiar_base</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">combo_bases</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">row</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">padx</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">pady</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">sticky</span><span class="o">=</span><span class="s2">&quot;w&quot;</span><span class="p">)</span>
+
+<div class="viewcode-block" id="Vista.cambiar_base">
+<a class="viewcode-back" href="../vista.html#vista.Vista.cambiar_base">[docs]</a>
+    <span class="k">def</span> <span class="nf">cambiar_base</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="n">seleccion</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">combo_bases</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
+        <span class="n">retorno</span> <span class="o">=</span> <span class="n">objetoBase</span><span class="o">.</span><span class="n">seleccionar_base</span><span class="p">(</span><span class="n">seleccion</span><span class="p">)</span>
+        <span class="n">messagebox</span><span class="o">.</span><span class="n">showinfo</span><span class="p">(</span><span class="s2">&quot;Base de datos&quot;</span><span class="p">,</span> <span class="n">retorno</span><span class="p">)</span></div>
+
+    <span class="c1"># ------------------------------------------------------------------------</span>
+<div class="viewcode-block" id="Vista.cambiar_tema">
+<a class="viewcode-back" href="../vista.html#vista.Vista.cambiar_tema">[docs]</a>
+    <span class="k">def</span> <span class="nf">cambiar_tema</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        La función *cambiar_tema* permite que, utilizando **polimorfismo** en los distintos *widgets*, los modifiquemos según el *tema* seleccionado.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">seleccion</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">combo_temas</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">modificar_root</span><span class="p">(</span><span class="n">seleccion</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">widgets</span><span class="p">:</span>
+            <span class="n">x</span><span class="o">.</span><span class="n">modificar</span><span class="p">(</span><span class="n">seleccion</span><span class="p">)</span></div>
+
+    
+<div class="viewcode-block" id="Vista.modificar_root">
+<a class="viewcode-back" href="../vista.html#vista.Vista.modificar_root">[docs]</a>
+    <span class="k">def</span> <span class="nf">modificar_root</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">seleccion</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">seleccion</span> <span class="o">==</span> <span class="s2">&quot;Crema (default)&quot;</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">root</span><span class="o">.</span><span class="n">config</span><span class="p">(</span><span class="n">bg</span><span class="o">=</span><span class="s2">&quot;#F0C266&quot;</span><span class="p">,)</span>
+        <span class="k">elif</span> <span class="n">seleccion</span> <span class="o">==</span> <span class="s2">&quot;Light&quot;</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">root</span><span class="o">.</span><span class="n">config</span><span class="p">(</span><span class="n">bg</span><span class="o">=</span><span class="s2">&quot;#B7EEE3&quot;</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">seleccion</span> <span class="o">==</span> <span class="s2">&quot;Black&quot;</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">root</span><span class="o">.</span><span class="n">config</span><span class="p">(</span><span class="n">bg</span><span class="o">=</span><span class="s2">&quot;#1A1E48&quot;</span><span class="p">)</span></div>
+
+        
+
+<div class="viewcode-block" id="Vista.seleccion">
+<a class="viewcode-back" href="../vista.html#vista.Vista.seleccion">[docs]</a>
+    <span class="k">def</span> <span class="nf">seleccion</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">event</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        La funcion *seleccion* permite que los *entrys* se rellenen con la información de la *base de datos* correspondiente al elemento seleccionado del *treeview*.</span>
+<span class="sd">        &quot;&quot;&quot;</span>    
+        <span class="n">valor</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">tv</span><span class="o">.</span><span class="n">selection</span><span class="p">()</span>
+        <span class="n">item</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">tv</span><span class="o">.</span><span class="n">item</span><span class="p">(</span><span class="n">valor</span><span class="p">)</span>
+        <span class="nb">id</span> <span class="o">=</span> <span class="n">item</span><span class="p">[</span><span class="s2">&quot;text&quot;</span><span class="p">]</span>
+        <span class="n">objeto</span><span class="o">.</span><span class="n">cargar_entrys</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">producto</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">combo</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">cantidad</span><span class="p">,</span><span class="nb">id</span><span class="p">)</span></div>
+
+
+    <span class="c1"># ABCM------------------------------------------------------------------------</span>
+
+<div class="viewcode-block" id="Vista.alta">
+<a class="viewcode-back" href="../vista.html#vista.Vista.alta">[docs]</a>
+    <span class="k">def</span> <span class="nf">alta</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        La función &quot;alta&quot; de &quot;vista.py&quot; invoca a la funcion &quot;alta&quot; del **objeto** creado previamente, y espera su retorno para mostrarlo en un *messagebox*.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">retorno</span> <span class="o">=</span> <span class="n">objeto</span><span class="o">.</span><span class="n">alta</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">tv</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">producto</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">combo</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">cantidad</span><span class="p">)</span>
+        <span class="n">messagebox</span><span class="o">.</span><span class="n">showinfo</span><span class="p">(</span><span class="s2">&quot;Alta&quot;</span><span class="p">,</span> <span class="n">retorno</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="Vista.baja">
+<a class="viewcode-back" href="../vista.html#vista.Vista.baja">[docs]</a>
+    <span class="k">def</span> <span class="nf">baja</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        La función &quot;baja&quot; de &quot;vista.py&quot; invoca a la funcion &quot;baja&quot; del **objeto** creado previamente, y espera su retorno para mostrarlo en un *messagebox*.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">valor</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">tv</span><span class="o">.</span><span class="n">selection</span><span class="p">()</span>  
+        <span class="k">if</span> <span class="n">valor</span><span class="p">:</span> 
+            <span class="n">resultado</span> <span class="o">=</span> <span class="n">messagebox</span><span class="o">.</span><span class="n">askquestion</span><span class="p">(</span><span class="s2">&quot;Baja&quot;</span><span class="p">,</span> <span class="s2">&quot;¿Estas seguro de querer eliminar este producto?&quot;</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">resultado</span> <span class="o">==</span> <span class="s2">&quot;yes&quot;</span><span class="p">:</span>
+                <span class="n">retorno</span> <span class="o">=</span> <span class="n">objeto</span><span class="o">.</span><span class="n">baja</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">tv</span><span class="p">,</span> <span class="n">valor</span><span class="p">)</span>
+                <span class="n">messagebox</span><span class="o">.</span><span class="n">showinfo</span><span class="p">(</span><span class="s2">&quot;Baja&quot;</span><span class="p">,</span> <span class="n">retorno</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">messagebox</span><span class="o">.</span><span class="n">showinfo</span><span class="p">(</span><span class="s2">&quot;Acción cancelada&quot;</span><span class="p">,</span> <span class="s2">&quot;No se eliminó el producto&quot;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">messagebox</span><span class="o">.</span><span class="n">showinfo</span><span class="p">(</span><span class="s2">&quot;Acción cancelada&quot;</span><span class="p">,</span> <span class="s2">&quot;Debe seleccionar un producto a eliminar&quot;</span><span class="p">)</span></div>
+
+        
+<div class="viewcode-block" id="Vista.modificacion">
+<a class="viewcode-back" href="../vista.html#vista.Vista.modificacion">[docs]</a>
+    <span class="k">def</span> <span class="nf">modificacion</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        La función &quot;modificacion&quot; de &quot;vista.py&quot; invoca a la funcion &quot;modificacion&quot; del **objeto** creado previamente, y espera su retorno para mostrarlo en un *messagebox*.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">valor</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">tv</span><span class="o">.</span><span class="n">selection</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">valor</span><span class="p">:</span>
+            <span class="n">resultado</span> <span class="o">=</span> <span class="n">messagebox</span><span class="o">.</span><span class="n">askquestion</span><span class="p">(</span><span class="s2">&quot;Modificación&quot;</span><span class="p">,</span> <span class="s2">&quot;¿Estas seguro de querer modificar este producto?&quot;</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">resultado</span> <span class="o">==</span> <span class="s2">&quot;yes&quot;</span><span class="p">:</span>
+                <span class="n">retorno</span> <span class="o">=</span> <span class="n">objeto</span><span class="o">.</span><span class="n">modificacion</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">tv</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">producto</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">combo</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">cantidad</span><span class="p">,</span><span class="n">valor</span><span class="p">)</span>
+                <span class="n">messagebox</span><span class="o">.</span><span class="n">showinfo</span><span class="p">(</span><span class="s2">&quot;Modificación&quot;</span><span class="p">,</span> <span class="n">retorno</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">messagebox</span><span class="o">.</span><span class="n">showinfo</span><span class="p">(</span><span class="s2">&quot;Acción cancelada&quot;</span><span class="p">,</span> <span class="s2">&quot;No se modificó el producto&quot;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">messagebox</span><span class="o">.</span><span class="n">showinfo</span><span class="p">(</span><span class="s2">&quot;Acción cancelada&quot;</span><span class="p">,</span> <span class="s2">&quot;Debe seleccionar un producto a modificar&quot;</span><span class="p">)</span></div>
+
+    <span class="c1"># ------------------------------------------------------------------------</span>
+            
+<div class="viewcode-block" id="Vista.conectar_base">
+<a class="viewcode-back" href="../vista.html#vista.Vista.conectar_base">[docs]</a>
+    <span class="k">def</span> <span class="nf">conectar_base</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        La función &quot;conectar_base&quot; de &quot;vista.py&quot; invoca a la funcion &quot;conectar_base&quot; del **objeto** creado previamente, y espera su retorno para mostrarlo en un *messagebox*.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">retorno</span> <span class="o">=</span> <span class="n">objetoBase</span><span class="o">.</span><span class="n">conectar_base</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">tv</span><span class="p">)</span> 
+        <span class="n">messagebox</span><span class="o">.</span><span class="n">showinfo</span><span class="p">(</span><span class="s2">&quot;Base de Datos&quot;</span><span class="p">,</span> <span class="n">retorno</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Vista.crear_tabla">
+<a class="viewcode-back" href="../vista.html#vista.Vista.crear_tabla">[docs]</a>
+    <span class="k">def</span> <span class="nf">crear_tabla</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        La función &quot;crear_tabla&quot; de &quot;vista.py&quot; invoca a la funcion &quot;crear_tabla&quot; del **objeto** creado previamente, y espera su retorno para mostrarlo en un *messagebox*.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">retorno</span> <span class="o">=</span> <span class="n">objetoBase</span><span class="o">.</span><span class="n">crear_tabla</span><span class="p">()</span>
+        <span class="n">messagebox</span><span class="o">.</span><span class="n">showinfo</span><span class="p">(</span><span class="s2">&quot;Tabla &#39;Productos&#39;&quot;</span><span class="p">,</span> <span class="n">retorno</span><span class="p">)</span></div>
+</div>
+
+
+
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, David Schmidt.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

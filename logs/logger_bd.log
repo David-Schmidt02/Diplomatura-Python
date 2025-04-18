@@ -1,0 +1,22 @@
+2025-04-18 17:35:47,761 - logger_bd - INFO - Se activa el logger de la base de datos en la fecha: 18/04/2025 17:35:47
+2025-04-18 17:35:52,248 - logger_bd - INFO - Acción: conectar_base ejecutada por el usuario
+2025-04-18 17:35:53,943 - logger_bd - INFO - Acción: crear_tabla ejecutada por el usuario
+2025-04-18 17:36:03,740 - logger_bd - INFO - Acción: cambiar_base ejecutada por el usuario
+2025-04-18 17:36:08,867 - logger_bd - INFO - Acción: cambiar_base ejecutada por el usuario
+2025-04-18 17:36:54,316 - logger_bd - INFO - Se activa el logger de la base de datos en la fecha: 18/04/2025 17:36:54
+2025-04-18 17:36:57,664 - logger_bd - INFO - Acción: conectar_base ejecutada por el usuario
+2025-04-18 17:37:00,784 - logger_bd - INFO - Acción: crear_tabla ejecutada por el usuario
+2025-04-18 17:37:03,106 - logger_bd - INFO - Acción: crear_tabla ejecutada por el usuario
+2025-04-18 17:37:29,132 - logger_bd - INFO - Acción: alta ejecutada por el usuario
+2025-04-18 17:37:37,407 - logger_bd - INFO - Acción: alta ejecutada por el usuario
+2025-04-18 17:37:55,214 - logger_bd - INFO - Acción: alta ejecutada por el usuario
+2025-04-18 17:41:24,126 - logger_bd - INFO - Se activa el logger de la base de datos en la fecha: 18/04/2025 17:41:24
+2025-04-18 17:41:31,906 - logger_bd - INFO - Acción: cambiar_base ejecutada por el usuario
+2025-04-18 17:41:39,262 - logger_bd - INFO - Acción: conectar_base ejecutada por el usuario
+2025-04-18 17:41:59,056 - logger_bd - INFO - Acción: alta ejecutada por el usuario
+2025-04-18 17:42:38,072 - logger_bd - INFO - Se activa el logger de la base de datos en la fecha: 18/04/2025 17:42:38
+2025-04-18 17:42:42,103 - logger_bd - INFO - Se activa el logger de la base de datos en la fecha: 18/04/2025 17:42:42
+2025-04-18 17:42:48,625 - logger_bd - INFO - Acción: conectar_base ejecutada por el usuario
+2025-04-18 17:43:04,207 - logger_bd - INFO - Acción: alta ejecutada por el usuario
+2025-04-18 17:43:08,147 - logger_bd - INFO - Se activa el logger de la base de datos en la fecha: 18/04/2025 17:43:08
+2025-04-18 17:43:10,384 - logger_bd - INFO - Acción: conectar_base ejecutada por el usuario
