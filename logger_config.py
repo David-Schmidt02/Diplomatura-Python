@@ -41,7 +41,3 @@ fecha_actual = datetime.datetime.today().strftime("%d/%m/%Y %H:%M:%S")
 logger_main.info(f"Se activa el logger del main en la fecha: {fecha_actual}")
 logger_bd.info(f"Se activa el logger de la base de datos en la fecha: {fecha_actual}")
 
-# Ejemplo de uso
-if __name__ == "__main__":
-    logger_main.debug("Este es un mensaje de depuración.")
-    logger_main.info("Este es un mensaje informativo.")
