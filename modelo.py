@@ -206,18 +206,18 @@ class Abcm():
         """
         Cuando se selecciona un elemento del *treeview*, se toma su información de la *base de datos* y se rellenan los *entrys* con la misma.
         """
-        con = self.conector.conexion()
-        cursor = con.cursor()
-        data = (id,)
-        sql = "SELECT Producto, Laboratorio, Cantidad FROM Productos WHERE id = ?"
-        cursor.execute(sql, data)
-        resultado = cursor.fetchone()
-        con.close()
-        if resultado:
-            producto.set(resultado[0])
-            laboratorio.set(resultado[1])
-            cantidad.set(str(resultado[2]))    
-        logger_main.info(f"Se cargaron los entrys con el producto {resultado[0]} id {id} de la base de datos")
+        try:
+        # Usar Peewee para obtener el producto por su ID
+            resultado = Producto.get_or_none(Producto.id == id)
+            if resultado:
+                producto.set(resultado.nombre)
+                laboratorio.set(resultado.laboratorio)
+                cantidad.set(str(resultado.cantidad))
+                logger_main.info(f"Se cargaron los entrys con el producto {resultado.nombre} id {id} de la base de datos")
+            else:
+                logger_main.warning(f"No se encontró un producto con el id {id}")
+        except Exception as e:
+            logger_main.error(f"Error al cargar los entrys: {e}")
 
     @loggear_en_main
     def limpiar_datos(self, producto, combo_laboratorio, cantidad):

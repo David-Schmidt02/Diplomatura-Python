@@ -20,3 +20,37 @@
 2025-04-18 17:43:04,207 - logger_bd - INFO - Acci�n: alta ejecutada por el usuario
 2025-04-18 17:43:08,147 - logger_bd - INFO - Se activa el logger de la base de datos en la fecha: 18/04/2025 17:43:08
 2025-04-18 17:43:10,384 - logger_bd - INFO - Acci�n: conectar_base ejecutada por el usuario
+2025-04-19 10:25:30,120 - logger_bd - INFO - Se activa el logger de la base de datos en la fecha: 19/04/2025 10:25:30
+2025-04-19 10:26:21,734 - logger_bd - INFO - Acción: conectar_base ejecutada por el usuario
+2025-04-19 10:26:26,808 - logger_bd - INFO - Acción: crear_tabla ejecutada por el usuario
+2025-04-19 10:26:31,572 - logger_bd - INFO - Acción: alta ejecutada por el usuario
+2025-04-19 10:26:33,886 - logger_bd - INFO - Acción: baja ejecutada por el usuario
+2025-04-19 10:26:36,184 - logger_bd - INFO - Acción: baja ejecutada por el usuario
+2025-04-19 10:26:38,572 - logger_bd - INFO - Acción: modificacion ejecutada por el usuario
+2025-04-19 10:26:55,383 - logger_bd - INFO - Acción: cambiar_base ejecutada por el usuario
+2025-04-19 10:27:01,156 - logger_bd - INFO - Acción: alta ejecutada por el usuario
+2025-04-19 10:42:23,768 - logger_bd - INFO - Se activa el logger de la base de datos en la fecha: 19/04/2025 10:42:23
+2025-04-19 10:42:31,692 - logger_bd - INFO - Se activa el logger de la base de datos en la fecha: 19/04/2025 10:42:31
+2025-04-19 10:42:34,914 - logger_bd - INFO - Se activa el logger de la base de datos en la fecha: 19/04/2025 10:42:34
+2025-04-19 10:42:39,541 - logger_bd - INFO - Acción: conectar_base ejecutada por el usuario
+2025-04-19 10:45:00,699 - logger_bd - INFO - Se activa el logger de la base de datos en la fecha: 19/04/2025 10:45:00
+2025-04-19 10:45:04,701 - logger_bd - INFO - Acción: conectar_base ejecutada por el usuario
+2025-04-19 10:48:08,123 - logger_bd - INFO - Se activa el logger de la base de datos en la fecha: 19/04/2025 10:48:08
+2025-04-19 10:48:11,143 - logger_bd - INFO - Acción: conectar_base ejecutada por el usuario
+2025-04-19 10:48:22,658 - logger_bd - INFO - Acción: crear_tabla ejecutada por el usuario
+2025-04-19 10:49:07,443 - logger_bd - INFO - Acción: modificacion ejecutada por el usuario
+2025-04-19 11:00:36,038 - logger_bd - INFO - Se activa el logger de la base de datos en la fecha: 19/04/2025 11:00:36
+2025-04-19 11:00:38,751 - logger_bd - INFO - Acción: conectar_base ejecutada por el usuario
+2025-04-19 11:00:57,002 - logger_bd - INFO - Acción: modificacion ejecutada por el usuario
+2025-04-19 11:01:28,627 - logger_bd - INFO - Se activa el logger de la base de datos en la fecha: 19/04/2025 11:01:28
+2025-04-19 11:01:32,325 - logger_bd - INFO - Acción: conectar_base ejecutada por el usuario
+2025-04-19 11:01:39,453 - logger_bd - INFO - Acción: modificacion ejecutada por el usuario
+2025-04-19 11:02:03,707 - logger_bd - INFO - Se activa el logger de la base de datos en la fecha: 19/04/2025 11:02:03
+2025-04-19 11:02:06,047 - logger_bd - INFO - Acción: conectar_base ejecutada por el usuario
+2025-04-19 11:02:12,888 - logger_bd - INFO - Acción: modificacion ejecutada por el usuario
+2025-04-19 11:02:22,262 - logger_bd - INFO - Acción: baja ejecutada por el usuario
+2025-04-19 11:02:59,440 - logger_bd - INFO - Se activa el logger de la base de datos en la fecha: 19/04/2025 11:02:59
+2025-04-19 11:03:01,792 - logger_bd - INFO - Acción: conectar_base ejecutada por el usuario
+2025-04-19 11:03:11,311 - logger_bd - INFO - Acción: alta ejecutada por el usuario
+2025-04-19 11:03:16,907 - logger_bd - INFO - Acción: alta ejecutada por el usuario
+2025-04-19 11:03:21,790 - logger_bd - INFO - Acción: baja ejecutada por el usuario

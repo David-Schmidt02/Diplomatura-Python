@@ -223,8 +223,10 @@ class Vista():
         if valor: 
             resultado = messagebox.askquestion("Baja", "¿Estas seguro de querer eliminar este producto?")
             if resultado == "yes":
+                self.tv.unbind("<<TreeviewSelect>>")
                 retorno = objeto.baja(self.tv, valor)
                 messagebox.showinfo("Baja", retorno)
+                self.tv.bind("<<TreeviewSelect>>", self.seleccion)
             else:
                 messagebox.showinfo("Acción cancelada", "No se eliminó el producto")
         else:
@@ -238,8 +240,10 @@ class Vista():
         if valor:
             resultado = messagebox.askquestion("Modificación", "¿Estas seguro de querer modificar este producto?")
             if resultado == "yes":
+                self.tv.unbind("<<TreeviewSelect>>")
                 retorno = objeto.modificacion(self.tv, self.producto, self.combo, self.cantidad,valor)
                 messagebox.showinfo("Modificación", retorno)
+                self.tv.bind("<<TreeviewSelect>>", self.seleccion)
             else:
                 messagebox.showinfo("Acción cancelada", "No se modificó el producto")
         else:

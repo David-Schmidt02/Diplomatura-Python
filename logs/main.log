@@ -43,3 +43,152 @@
 2025-04-18 17:43:09,479 - logger_main - INFO - Ejecutando la funci�n actualizar_treeview
 2025-04-18 17:43:11,728 - logger_main - INFO - Ejecutando la funci�n cargar_entrys
 2025-04-18 17:43:12,843 - logger_main - INFO - Ejecutando la funci�n cargar_entrys
+2025-04-19 10:25:30,119 - logger_main - INFO - Se activa el logger del main en la fecha: 19/04/2025 10:25:30
+2025-04-19 10:26:18,521 - logger_main - INFO - Ejecutando la función actualizar_treeview
+2025-04-19 10:26:29,781 - logger_main - INFO - Ejecutando la función alta
+2025-04-19 10:26:29,782 - logger_main - INFO - Ejecutando la función limpiar_producto
+2025-04-19 10:26:29,783 - logger_main - ERROR - Error en el campo 'Producto'
+2025-04-19 10:26:51,673 - logger_main - INFO - Se seleccionó la base: SQLite3 (default)
+2025-04-19 10:26:58,400 - logger_main - INFO - Ejecutando la función alta
+2025-04-19 10:26:58,432 - logger_main - INFO - Se agregó el producto Oleo a la base de datos
+2025-04-19 10:26:58,433 - logger_main - INFO - Ejecutando la función actualizar_treeview
+2025-04-19 10:26:58,435 - logger_main - INFO - Ejecutando la función limpiar_datos
+2025-04-19 10:26:58,437 - logger_main - INFO - Se limpiaron los entrys
+2025-04-19 10:27:02,138 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-19 10:27:04,000 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-19 10:27:04,708 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-19 10:42:23,767 - logger_main - INFO - Se activa el logger del main en la fecha: 19/04/2025 10:42:23
+2025-04-19 10:42:31,691 - logger_main - INFO - Se activa el logger del main en la fecha: 19/04/2025 10:42:31
+2025-04-19 10:42:34,913 - logger_main - INFO - Se activa el logger del main en la fecha: 19/04/2025 10:42:34
+2025-04-19 10:42:37,542 - logger_main - INFO - Ejecutando la función actualizar_treeview
+2025-04-19 10:45:00,697 - logger_main - INFO - Se activa el logger del main en la fecha: 19/04/2025 10:45:00
+2025-04-19 10:45:03,751 - logger_main - INFO - Ejecutando la función actualizar_treeview
+2025-04-19 10:45:05,319 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-19 10:48:08,122 - logger_main - INFO - Se activa el logger del main en la fecha: 19/04/2025 10:48:08
+2025-04-19 10:48:09,855 - logger_main - INFO - Ejecutando la función actualizar_treeview
+2025-04-19 10:48:11,718 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-19 10:48:11,735 - logger_main - INFO - Se cargaron los entrys con el producto Serum id 5 de la base de datos
+2025-04-19 10:48:12,589 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-19 10:48:12,591 - logger_main - INFO - Se cargaron los entrys con el producto Serum id 4 de la base de datos
+2025-04-19 10:48:13,733 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-19 10:48:13,737 - logger_main - INFO - Se cargaron los entrys con el producto Crema id 3 de la base de datos
+2025-04-19 10:48:14,672 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-19 10:48:14,675 - logger_main - INFO - Se cargaron los entrys con el producto Serum id 1 de la base de datos
+2025-04-19 10:48:15,718 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-19 10:48:15,720 - logger_main - INFO - Se cargaron los entrys con el producto Crema id 2 de la base de datos
+2025-04-19 10:48:16,087 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-19 10:48:16,090 - logger_main - INFO - Se cargaron los entrys con el producto Serum id 4 de la base de datos
+2025-04-19 10:48:16,513 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-19 10:48:16,515 - logger_main - INFO - Se cargaron los entrys con el producto Serum id 5 de la base de datos
+2025-04-19 10:48:17,047 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-19 10:48:17,050 - logger_main - INFO - Se cargaron los entrys con el producto Oleo id 6 de la base de datos
+2025-04-19 10:48:17,436 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-19 10:48:17,438 - logger_main - INFO - Se cargaron los entrys con el producto Serum id 5 de la base de datos
+2025-04-19 10:48:17,730 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-19 10:48:17,732 - logger_main - INFO - Se cargaron los entrys con el producto Crema id 3 de la base de datos
+2025-04-19 10:48:18,176 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-19 10:48:18,178 - logger_main - INFO - Se cargaron los entrys con el producto Serum id 1 de la base de datos
+2025-04-19 10:48:18,811 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-19 10:48:18,814 - logger_main - INFO - Se cargaron los entrys con el producto Crema id 3 de la base de datos
+2025-04-19 10:48:19,101 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-19 10:48:19,102 - logger_main - INFO - Se cargaron los entrys con el producto Serum id 4 de la base de datos
+2025-04-19 10:48:19,427 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-19 10:48:19,428 - logger_main - INFO - Se cargaron los entrys con el producto Oleo id 6 de la base de datos
+2025-04-19 10:48:19,824 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-19 10:48:19,826 - logger_main - INFO - Se cargaron los entrys con el producto Serum id 5 de la base de datos
+2025-04-19 10:48:20,121 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-19 10:48:20,122 - logger_main - INFO - Se cargaron los entrys con el producto Crema id 3 de la base de datos
+2025-04-19 10:48:20,400 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-19 10:48:20,402 - logger_main - INFO - Se cargaron los entrys con el producto Serum id 1 de la base de datos
+2025-04-19 10:48:20,688 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-19 10:48:20,690 - logger_main - INFO - Se cargaron los entrys con el producto Serum id 4 de la base de datos
+2025-04-19 10:48:29,051 - logger_main - INFO - Ejecutando la función modificacion
+2025-04-19 10:48:29,084 - logger_main - INFO - Ejecutando la función actualizar_treeview
+2025-04-19 10:48:29,087 - logger_main - INFO - Ejecutando la función limpiar_datos
+2025-04-19 10:48:29,088 - logger_main - INFO - Se limpiaron los entrys
+2025-04-19 10:48:29,089 - logger_main - INFO - Se modificó el producto Serum en la base de datos
+2025-04-19 10:48:29,091 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-19 10:48:29,094 - logger_main - WARNING - No se encontró un producto con el id 
+2025-04-19 11:00:36,037 - logger_main - INFO - Se activa el logger del main en la fecha: 19/04/2025 11:00:36
+2025-04-19 11:00:37,767 - logger_main - INFO - Ejecutando la función actualizar_treeview
+2025-04-19 11:00:39,323 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-19 11:00:39,326 - logger_main - INFO - Se cargaron los entrys con el producto Crema id 3 de la base de datos
+2025-04-19 11:00:40,031 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-19 11:00:40,034 - logger_main - INFO - Se cargaron los entrys con el producto Serum id 1 de la base de datos
+2025-04-19 11:00:40,487 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-19 11:00:40,490 - logger_main - INFO - Se cargaron los entrys con el producto Crema id 3 de la base de datos
+2025-04-19 11:00:40,826 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-19 11:00:40,829 - logger_main - INFO - Se cargaron los entrys con el producto Serum id 5 de la base de datos
+2025-04-19 11:00:46,094 - logger_main - INFO - Ejecutando la función modificacion
+2025-04-19 11:00:46,128 - logger_main - INFO - Ejecutando la función actualizar_treeview
+2025-04-19 11:00:46,132 - logger_main - INFO - Ejecutando la función limpiar_datos
+2025-04-19 11:00:46,134 - logger_main - INFO - Se limpiaron los entrys
+2025-04-19 11:00:46,135 - logger_main - INFO - Se modificó el producto Serum en la base de datos
+2025-04-19 11:00:46,137 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-19 11:00:46,141 - logger_main - WARNING - No se encontró un producto con el id 
+2025-04-19 11:01:28,627 - logger_main - INFO - Se activa el logger del main en la fecha: 19/04/2025 11:01:28
+2025-04-19 11:01:30,091 - logger_main - INFO - Ejecutando la función actualizar_treeview
+2025-04-19 11:01:32,931 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-19 11:01:32,934 - logger_main - INFO - Se cargaron los entrys con el producto Serum id 1 de la base de datos
+2025-04-19 11:01:37,080 - logger_main - INFO - Ejecutando la función modificacion
+2025-04-19 11:01:37,113 - logger_main - INFO - Ejecutando la función actualizar_treeview
+2025-04-19 11:01:37,116 - logger_main - INFO - Ejecutando la función limpiar_datos
+2025-04-19 11:01:37,117 - logger_main - INFO - Se limpiaron los entrys
+2025-04-19 11:01:37,117 - logger_main - INFO - Se modificó el producto Serum en la base de datos
+2025-04-19 11:02:03,706 - logger_main - INFO - Se activa el logger del main en la fecha: 19/04/2025 11:02:03
+2025-04-19 11:02:05,090 - logger_main - INFO - Ejecutando la función actualizar_treeview
+2025-04-19 11:02:06,532 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-19 11:02:06,534 - logger_main - INFO - Se cargaron los entrys con el producto Crema id 2 de la base de datos
+2025-04-19 11:02:11,155 - logger_main - INFO - Ejecutando la función modificacion
+2025-04-19 11:02:11,186 - logger_main - INFO - Ejecutando la función actualizar_treeview
+2025-04-19 11:02:11,190 - logger_main - INFO - Ejecutando la función limpiar_datos
+2025-04-19 11:02:11,191 - logger_main - INFO - Se limpiaron los entrys
+2025-04-19 11:02:11,192 - logger_main - INFO - Se modificó el producto Crema en la base de datos
+2025-04-19 11:02:13,664 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-19 11:02:13,667 - logger_main - INFO - Se cargaron los entrys con el producto Crema id 2 de la base de datos
+2025-04-19 11:02:14,325 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-19 11:02:14,328 - logger_main - INFO - Se cargaron los entrys con el producto Serum id 1 de la base de datos
+2025-04-19 11:02:14,676 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-19 11:02:14,679 - logger_main - INFO - Se cargaron los entrys con el producto Serum id 4 de la base de datos
+2025-04-19 11:02:15,016 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-19 11:02:15,018 - logger_main - INFO - Se cargaron los entrys con el producto Serum id 5 de la base de datos
+2025-04-19 11:02:15,478 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-19 11:02:15,480 - logger_main - INFO - Se cargaron los entrys con el producto Crema id 3 de la base de datos
+2025-04-19 11:02:20,063 - logger_main - INFO - Ejecutando la función baja
+2025-04-19 11:02:20,098 - logger_main - INFO - Ejecutando la función actualizar_treeview
+2025-04-19 11:02:20,100 - logger_main - INFO - Se eliminó el producto Crema de la base de datos
+2025-04-19 11:02:20,103 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-19 11:02:20,105 - logger_main - WARNING - No se encontró un producto con el id 
+2025-04-19 11:02:59,439 - logger_main - INFO - Se activa el logger del main en la fecha: 19/04/2025 11:02:59
+2025-04-19 11:03:00,939 - logger_main - INFO - Ejecutando la función actualizar_treeview
+2025-04-19 11:03:03,095 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-19 11:03:03,098 - logger_main - INFO - Se cargaron los entrys con el producto Serum id 4 de la base de datos
+2025-04-19 11:03:03,496 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-19 11:03:03,499 - logger_main - INFO - Se cargaron los entrys con el producto Serum id 1 de la base de datos
+2025-04-19 11:03:03,896 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-19 11:03:03,898 - logger_main - INFO - Se cargaron los entrys con el producto Serum id 4 de la base de datos
+2025-04-19 11:03:09,056 - logger_main - INFO - Ejecutando la función alta
+2025-04-19 11:03:09,057 - logger_main - INFO - Ejecutando la función limpiar_producto
+2025-04-19 11:03:09,058 - logger_main - ERROR - Error en el campo 'Producto'
+2025-04-19 11:03:12,458 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-19 11:03:12,461 - logger_main - INFO - Se cargaron los entrys con el producto Serum id 4 de la base de datos
+2025-04-19 11:03:15,542 - logger_main - INFO - Ejecutando la función alta
+2025-04-19 11:03:15,573 - logger_main - INFO - Se agregó el producto SerumM a la base de datos
+2025-04-19 11:03:15,575 - logger_main - INFO - Ejecutando la función actualizar_treeview
+2025-04-19 11:03:15,579 - logger_main - INFO - Ejecutando la función limpiar_datos
+2025-04-19 11:03:15,579 - logger_main - INFO - Se limpiaron los entrys
+2025-04-19 11:03:15,580 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-19 11:03:15,582 - logger_main - WARNING - No se encontró un producto con el id 
+2025-04-19 11:03:18,730 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-19 11:03:18,732 - logger_main - INFO - Se cargaron los entrys con el producto SerumM id 7 de la base de datos
+2025-04-19 11:03:20,774 - logger_main - INFO - Ejecutando la función baja
+2025-04-19 11:03:20,806 - logger_main - INFO - Ejecutando la función actualizar_treeview
+2025-04-19 11:03:20,808 - logger_main - INFO - Se eliminó el producto SerumM de la base de datos
+2025-04-19 11:03:22,388 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-19 11:03:22,390 - logger_main - INFO - Se cargaron los entrys con el producto Crema id 2 de la base de datos
+2025-04-19 11:03:22,926 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-19 11:03:22,929 - logger_main - INFO - Se cargaron los entrys con el producto Serum id 5 de la base de datos
+2025-04-19 11:03:23,279 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-19 11:03:23,281 - logger_main - INFO - Se cargaron los entrys con el producto Crema id 2 de la base de datos
+2025-04-19 11:03:23,620 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-19 11:03:23,621 - logger_main - INFO - Se cargaron los entrys con el producto Serum id 5 de la base de datos
