@@ -10,7 +10,7 @@ class Subject:
 
     def notificar_observadores(self, seleccion):
         for observador in self.observadores:
-            observador.modificar(seleccion)
+            observador.update_tema(seleccion)
 
 class Observador:
     def update_Tema(self, seleccion):

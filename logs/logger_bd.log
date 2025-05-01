@@ -99,3 +99,24 @@
 2025-04-30 23:27:24,116 - logger_bd - INFO - Acción: conectar_base ejecutada por el usuario
 2025-04-30 23:27:24,116 - logger_bd - INFO - Conexión a la base de datos
 2025-04-30 23:27:25,412 - logger_bd - INFO - Acción: cambiar_base ejecutada por el usuario
+2025-05-01 14:00:11,444 - logger_bd - INFO - Se activa el logger de la base de datos en la fecha: 01/05/2025 14:00:11
+2025-05-01 14:00:13,556 - logger_bd - INFO - Acción: conectar_base ejecutada por el usuario
+2025-05-01 14:00:13,556 - logger_bd - INFO - Conexión a la base de datos
+2025-05-01 14:00:40,682 - logger_bd - INFO - Se activa el logger de la base de datos en la fecha: 01/05/2025 14:00:40
+2025-05-01 14:00:43,100 - logger_bd - INFO - Acción: conectar_base ejecutada por el usuario
+2025-05-01 14:00:43,100 - logger_bd - INFO - Conexión a la base de datos
+2025-05-01 14:01:21,524 - logger_bd - INFO - Se activa el logger de la base de datos en la fecha: 01/05/2025 14:01:21
+2025-05-01 14:01:24,455 - logger_bd - INFO - Acción: conectar_base ejecutada por el usuario
+2025-05-01 14:01:24,455 - logger_bd - INFO - Conexión a la base de datos
+2025-05-01 14:01:34,701 - logger_bd - INFO - Acción: modificacion ejecutada por el usuario
+2025-05-01 14:01:34,701 - logger_bd - INFO - Producto: Crema
+2025-05-01 14:01:34,701 - logger_bd - INFO - Laboratorio: EXEL
+2025-05-01 14:01:34,701 - logger_bd - INFO - Cantidad: 10
+2025-05-01 14:01:41,278 - logger_bd - INFO - Acción: alta ejecutada por el usuario
+2025-05-01 14:01:41,278 - logger_bd - INFO - Producto: 
+2025-05-01 14:01:41,279 - logger_bd - INFO - Laboratorio: 
+2025-05-01 14:01:41,279 - logger_bd - INFO - Cantidad: 
+2025-05-01 14:01:45,960 - logger_bd - INFO - Acción: baja ejecutada por el usuario
+2025-05-01 14:01:45,960 - logger_bd - INFO - Producto: Crema
+2025-05-01 14:01:45,960 - logger_bd - INFO - Laboratorio: 100
+2025-05-01 14:01:45,960 - logger_bd - INFO - Cantidad: AP

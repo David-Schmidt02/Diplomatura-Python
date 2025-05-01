@@ -279,3 +279,64 @@
 2025-04-30 23:27:25,102 - logger_main - INFO - Se seleccionó la base: SQLite3 (default)
 2025-04-30 23:27:26,370 - logger_main - INFO - Se seleccionó el tema: Light
 2025-04-30 23:27:27,363 - logger_main - INFO - Se seleccionó el tema: Black
+2025-05-01 14:00:11,443 - logger_main - INFO - Se activa el logger del main en la fecha: 01/05/2025 14:00:11
+2025-05-01 14:00:13,176 - logger_main - INFO - Ejecutando la función actualizar_treeview
+2025-05-01 14:00:14,515 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-05-01 14:00:14,515 - logger_main - INFO - Se cargaron los entrys con el | Producto: Crema| Id: 7 |de la base de datos
+2025-05-01 14:00:14,714 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-05-01 14:00:14,715 - logger_main - INFO - Se cargaron los entrys con el | Producto: Serum| Id: 5 |de la base de datos
+2025-05-01 14:00:14,932 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-05-01 14:00:14,933 - logger_main - INFO - Se cargaron los entrys con el | Producto: Serum| Id: 4 |de la base de datos
+2025-05-01 14:00:15,160 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-05-01 14:00:15,161 - logger_main - INFO - Se cargaron los entrys con el | Producto: Crema| Id: 3 |de la base de datos
+2025-05-01 14:00:15,422 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-05-01 14:00:15,423 - logger_main - INFO - Se cargaron los entrys con el | Producto: Crema| Id: 3 |de la base de datos
+2025-05-01 14:00:15,658 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-05-01 14:00:15,659 - logger_main - INFO - Se cargaron los entrys con el | Producto: Serum| Id: 4 |de la base de datos
+2025-05-01 14:00:15,878 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-05-01 14:00:15,879 - logger_main - INFO - Se cargaron los entrys con el | Producto: Crema| Id: 7 |de la base de datos
+2025-05-01 14:00:16,356 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-05-01 14:00:16,357 - logger_main - INFO - Se cargaron los entrys con el | Producto: Crema| Id: 7 |de la base de datos
+2025-05-01 14:00:17,663 - logger_main - INFO - Se seleccionó el tema: Light
+2025-05-01 14:00:40,682 - logger_main - INFO - Se activa el logger del main en la fecha: 01/05/2025 14:00:40
+2025-05-01 14:00:42,584 - logger_main - INFO - Ejecutando la función actualizar_treeview
+2025-05-01 14:00:43,606 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-05-01 14:00:43,607 - logger_main - INFO - Se cargaron los entrys con el | Producto: Crema| Id: 8 |de la base de datos
+2025-05-01 14:00:43,781 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-05-01 14:00:43,781 - logger_main - INFO - Se cargaron los entrys con el | Producto: Crema| Id: 7 |de la base de datos
+2025-05-01 14:00:43,955 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-05-01 14:00:43,956 - logger_main - INFO - Se cargaron los entrys con el | Producto: Serum| Id: 5 |de la base de datos
+2025-05-01 14:00:44,120 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-05-01 14:00:44,121 - logger_main - INFO - Se cargaron los entrys con el | Producto: Serum| Id: 4 |de la base de datos
+2025-05-01 14:00:44,280 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-05-01 14:00:44,281 - logger_main - INFO - Se cargaron los entrys con el | Producto: Serum| Id: 4 |de la base de datos
+2025-05-01 14:00:45,325 - logger_main - INFO - Se seleccionó el tema: Black
+2025-05-01 14:00:47,453 - logger_main - INFO - Se seleccionó el tema: Crema (default)
+2025-05-01 14:00:49,153 - logger_main - INFO - Se seleccionó el tema: Light
+2025-05-01 14:01:21,524 - logger_main - INFO - Se activa el logger del main en la fecha: 01/05/2025 14:01:21
+2025-05-01 14:01:23,426 - logger_main - INFO - Ejecutando la función actualizar_treeview
+2025-05-01 14:01:25,809 - logger_main - INFO - Se seleccionó el tema: Light
+2025-05-01 14:01:27,125 - logger_main - INFO - Se seleccionó el tema: Black
+2025-05-01 14:01:28,899 - logger_main - INFO - Se seleccionó el tema: Crema (default)
+2025-05-01 14:01:29,758 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-05-01 14:01:29,759 - logger_main - INFO - Se cargaron los entrys con el | Producto: Crema| Id: 7 |de la base de datos
+2025-05-01 14:01:33,781 - logger_main - INFO - Ejecutando la función modificacion
+2025-05-01 14:01:33,788 - logger_main - INFO - Ejecutando la función actualizar_treeview
+2025-05-01 14:01:33,788 - logger_main - INFO - Ejecutando la función limpiar_datos
+2025-05-01 14:01:33,789 - logger_main - INFO - Se limpiaron los entrys
+2025-05-01 14:01:33,789 - logger_main - INFO - Se modificó el producto Crema en la base de datos
+2025-05-01 14:01:33,789 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-05-01 14:01:35,514 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-05-01 14:01:35,515 - logger_main - INFO - Se cargaron los entrys con el | Producto: Crema| Id: 7 |de la base de datos
+2025-05-01 14:01:40,158 - logger_main - INFO - Ejecutando la función alta
+2025-05-01 14:01:40,163 - logger_main - INFO - Se agregó el producto Crema a la base de datos
+2025-05-01 14:01:40,163 - logger_main - INFO - Ejecutando la función actualizar_treeview
+2025-05-01 14:01:40,164 - logger_main - INFO - Ejecutando la función limpiar_datos
+2025-05-01 14:01:40,164 - logger_main - INFO - Se limpiaron los entrys
+2025-05-01 14:01:40,165 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-05-01 14:01:41,897 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-05-01 14:01:41,898 - logger_main - INFO - Se cargaron los entrys con el | Producto: Crema| Id: 3 |de la base de datos
+2025-05-01 14:01:44,782 - logger_main - INFO - Ejecutando la función baja
+2025-05-01 14:01:44,790 - logger_main - INFO - Ejecutando la función actualizar_treeview
+2025-05-01 14:01:44,791 - logger_main - INFO - Se eliminó el producto Crema de la base de datos
+2025-05-01 14:01:44,791 - logger_main - INFO - Ejecutando la función cargar_entrys

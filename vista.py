@@ -18,7 +18,7 @@ objetoBase = InteraccionBD()
 
 from logger_config import logger_main, logger_bd
 
-class Vista(Subject):
+class Vista():
     def __init__(self,window, gestor_tema):
         self.widgets = []
         """
