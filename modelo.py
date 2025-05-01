@@ -147,10 +147,12 @@ class Abcm():
         try:
             self.actualizar_treeview(tree)
             logger_main.info(f"Se eliminó el producto {self.producto} de la base de datos")  
-            return "Se ha modificado: \nProducto: "+ str(self.producto) +"\nLaboratorio:"+ str(self.laboratorio) +"\nCantidad:" + str(self.cantidad)
+            mensaje = "Se ha modificado: \nProducto: "+ str(self.producto) +"\nLaboratorio:"+ str(self.laboratorio) +"\nCantidad:" + str(self.cantidad)
+            return mensaje, self.producto, self.laboratorio, self.cantidad 
         except:
             logger_main.error("Se intentó cargar un producto cuando la tabla no existía")
-            return "La tabla 'Productos' no fue creada"
+            mensaje = "La tabla 'Productos' no fue creada"
+            return mensaje, self.producto, self.laboratorio, self.cantidad
         
     @loggear_en_main
     def modificacion(self,tree, p1, l1, c1, valor):
@@ -173,19 +175,20 @@ class Abcm():
                     self.actualizar_treeview(tree)
                     self.limpiar_datos(p1, l1, c1)
                     logger_main.info(f"Se modificó el producto {self.producto} en la base de datos")
-                    return "Se ha modificado: \nProducto: "+ self.producto +"\nLaboratorio:"+ self.laboratorio +"\nCantidad:" + self.cantidad
+                    mensaje = "Se ha modificado: \nProducto: "+ self.producto +"\nLaboratorio:"+ self.laboratorio +"\nCantidad:" + self.cantidad
                 except:
                     logger_main.error("Se intentó cargar un producto cuando la tabla no existía")
-                    return "La tabla 'Productos' no fue creada"
+                    mensaje = "La tabla 'Productos' no fue creada"
                 
             else:
                 self.limpiar_cantidad(c1)
                 logger_main.error("Error en el campo 'Cantidad'")
-                return "Error en el campo 'Cantidad'"   
+                mensaje = "Error en el campo 'Cantidad'"   
         else:
             self.limpiar_producto(p1)
             logger_main.error("Error en el campo 'Producto'")
-            return "Error en el campo 'Producto'"
+            mensaje = "Error en el campo 'Producto'"
+        return mensaje, self.producto, self.laboratorio, self.cantidad
         
     @loggear_en_main    
     def actualizar_treeview(self, tree):
@@ -206,18 +209,15 @@ class Abcm():
         """
         Cuando se selecciona un elemento del *treeview*, se toma su información de la *base de datos* y se rellenan los *entrys* con la misma.
         """
-        con = self.conector.conexion()
-        cursor = con.cursor()
         data = (id,)
-        sql = "SELECT Producto, Laboratorio, Cantidad FROM Productos WHERE id = ?"
-        cursor.execute(sql, data)
+        sql = "SELECT nombre, laboratorio, cantidad FROM Producto WHERE id = ?"
+        cursor = db.execute_sql(sql, data)
         resultado = cursor.fetchone()
-        con.close()
         if resultado:
             producto.set(resultado[0])
             laboratorio.set(resultado[1])
             cantidad.set(str(resultado[2]))    
-        logger_main.info(f"Se cargaron los entrys con el producto {resultado[0]} id {id} de la base de datos")
+            logger_main.info(f"Se cargaron los entrys con el | Producto: {resultado[0]}| Id: {id} |de la base de datos")
 
     @loggear_en_main
     def limpiar_datos(self, producto, combo_laboratorio, cantidad):

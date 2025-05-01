@@ -1,45 +1,281 @@
-2025-04-18 17:35:47,761 - logger_main - INFO - Se activa el logger del main en la fecha: 18/04/2025 17:35:47
-2025-04-18 17:35:50,991 - logger_main - INFO - Ejecutando la función actualizar_treeview
-2025-04-18 17:35:56,319 - logger_main - INFO - Se seleccionó el tema: Light
-2025-04-18 17:35:58,384 - logger_main - INFO - Se seleccionó el tema: Black
-2025-04-18 17:35:59,698 - logger_main - INFO - Se seleccionó el tema: Crema (default)
-2025-04-18 17:36:01,972 - logger_main - INFO - Se seleccionó la base SQLite3
-2025-04-18 17:36:01,973 - logger_main - INFO - Se seleccionó la base: SQLite3 (default)
-2025-04-18 17:36:07,368 - logger_main - INFO - Se seleccionó la base Postgres
-2025-04-18 17:36:07,368 - logger_main - INFO - Se seleccionó la base: Postgres
-2025-04-18 17:36:54,316 - logger_main - INFO - Se activa el logger del main en la fecha: 18/04/2025 17:36:54
-2025-04-18 17:36:56,903 - logger_main - INFO - Ejecutando la función actualizar_treeview
-2025-04-18 17:37:04,914 - logger_main - INFO - Se seleccionó el tema: Black
-2025-04-18 17:37:22,237 - logger_main - INFO - Ejecutando la función alta
-2025-04-18 17:37:22,238 - logger_main - INFO - Ejecutando la función limpiar_producto
-2025-04-18 17:37:22,238 - logger_main - ERROR - Error en el campo 'Producto'
-2025-04-18 17:37:35,892 - logger_main - INFO - Ejecutando la función alta
-2025-04-18 17:37:35,893 - logger_main - INFO - Ejecutando la función limpiar_producto
-2025-04-18 17:37:35,893 - logger_main - ERROR - Error en el campo 'Producto'
-2025-04-18 17:37:41,549 - logger_main - INFO - Ejecutando la función alta
-2025-04-18 17:37:41,558 - logger_main - INFO - Ejecutando la función actualizar_treeview
-2025-04-18 17:37:41,559 - logger_main - INFO - Ejecutando la función limpiar_datos
-2025-04-18 17:37:41,559 - logger_main - INFO - Se limpiaron los entrys
-2025-04-18 17:37:41,559 - logger_main - INFO - Se agregó el producto Crema a la base de datos
-2025-04-18 17:41:24,125 - logger_main - INFO - Se activa el logger del main en la fecha: 18/04/2025 17:41:24
-2025-04-18 17:41:27,545 - logger_main - INFO - Se seleccionó el tema: Light
-2025-04-18 17:41:29,122 - logger_main - INFO - Se seleccionó la base: MySQL
-2025-04-18 17:41:37,753 - logger_main - INFO - Ejecutando la función actualizar_treeview
-2025-04-18 17:41:52,173 - logger_main - INFO - Ejecutando la función alta
-2025-04-18 17:41:52,182 - logger_main - INFO - Se agregó el producto Serum a la base de datos
-2025-04-18 17:41:52,182 - logger_main - INFO - Ejecutando la función actualizar_treeview
-2025-04-18 17:41:52,184 - logger_main - INFO - Ejecutando la función limpiar_datos
-2025-04-18 17:41:52,184 - logger_main - INFO - Se limpiaron los entrys
-2025-04-18 17:42:38,072 - logger_main - INFO - Se activa el logger del main en la fecha: 18/04/2025 17:42:38
-2025-04-18 17:42:42,103 - logger_main - INFO - Se activa el logger del main en la fecha: 18/04/2025 17:42:42
-2025-04-18 17:42:44,991 - logger_main - INFO - Se seleccionó el tema: Light
-2025-04-18 17:42:47,447 - logger_main - INFO - Ejecutando la función actualizar_treeview
-2025-04-18 17:42:59,355 - logger_main - INFO - Ejecutando la función alta
-2025-04-18 17:42:59,364 - logger_main - INFO - Se agregó el producto Serum a la base de datos
-2025-04-18 17:42:59,364 - logger_main - INFO - Ejecutando la función actualizar_treeview
-2025-04-18 17:42:59,365 - logger_main - INFO - Ejecutando la función limpiar_datos
-2025-04-18 17:42:59,365 - logger_main - INFO - Se limpiaron los entrys
-2025-04-18 17:43:08,147 - logger_main - INFO - Se activa el logger del main en la fecha: 18/04/2025 17:43:08
-2025-04-18 17:43:09,479 - logger_main - INFO - Ejecutando la función actualizar_treeview
-2025-04-18 17:43:11,728 - logger_main - INFO - Ejecutando la función cargar_entrys
-2025-04-18 17:43:12,843 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 21:12:18,049 - logger_main - INFO - Se activa el logger del main en la fecha: 30/04/2025 21:12:18
+2025-04-30 21:15:15,366 - logger_main - INFO - Se activa el logger del main en la fecha: 30/04/2025 21:15:15
+2025-04-30 21:19:31,949 - logger_main - INFO - Se activa el logger del main en la fecha: 30/04/2025 21:19:31
+2025-04-30 21:20:48,943 - logger_main - INFO - Se activa el logger del main en la fecha: 30/04/2025 21:20:48
+2025-04-30 21:20:57,742 - logger_main - INFO - Se activa el logger del main en la fecha: 30/04/2025 21:20:57
+2025-04-30 21:29:39,882 - logger_main - INFO - Se activa el logger del main en la fecha: 30/04/2025 21:29:39
+2025-04-30 21:29:44,346 - logger_main - INFO - Se seleccionó el tema: Light
+2025-04-30 21:29:48,072 - logger_main - INFO - Se seleccionó el tema: Crema (default)
+2025-04-30 21:29:49,157 - logger_main - INFO - Se seleccionó el tema: Black
+2025-04-30 21:29:52,002 - logger_main - INFO - Se seleccionó el tema: Light
+2025-04-30 21:30:01,008 - logger_main - INFO - Se seleccionó la base: MySQL
+2025-04-30 21:38:25,297 - logger_main - INFO - Se activa el logger del main en la fecha: 30/04/2025 21:38:25
+2025-04-30 21:38:27,563 - logger_main - INFO - Se seleccionó el tema: Light
+2025-04-30 21:38:29,641 - logger_main - INFO - Se seleccionó el tema: Black
+2025-04-30 21:38:31,140 - logger_main - INFO - Se seleccionó el tema: Crema (default)
+2025-04-30 21:38:32,113 - logger_main - INFO - Se seleccionó el tema: Light
+2025-04-30 21:38:32,983 - logger_main - INFO - Se seleccionó el tema: Black
+2025-04-30 21:38:34,125 - logger_main - INFO - Se seleccionó el tema: Crema (default)
+2025-04-30 21:38:34,961 - logger_main - INFO - Se seleccionó el tema: Black
+2025-04-30 21:38:35,837 - logger_main - INFO - Se seleccionó el tema: Light
+2025-04-30 21:38:37,121 - logger_main - INFO - Se seleccionó el tema: Crema (default)
+2025-04-30 21:38:39,285 - logger_main - INFO - Se seleccionó el tema: Light
+2025-04-30 21:38:40,607 - logger_main - INFO - Se seleccionó el tema: Black
+2025-04-30 21:38:43,930 - logger_main - INFO - Se seleccionó el tema: Crema (default)
+2025-04-30 21:38:45,465 - logger_main - INFO - Se seleccionó el tema: Light
+2025-04-30 21:38:47,404 - logger_main - INFO - Se seleccionó el tema: Crema (default)
+2025-04-30 21:38:49,253 - logger_main - INFO - Se seleccionó el tema: Black
+2025-04-30 21:39:50,633 - logger_main - INFO - Se activa el logger del main en la fecha: 30/04/2025 21:39:50
+2025-04-30 21:39:52,703 - logger_main - INFO - Se seleccionó el tema: Black
+2025-04-30 22:13:20,272 - logger_main - INFO - Se activa el logger del main en la fecha: 30/04/2025 22:13:20
+2025-04-30 22:13:22,304 - logger_main - INFO - Se seleccionó el tema: Light
+2025-04-30 22:13:23,750 - logger_main - INFO - Se seleccionó el tema: Black
+2025-04-30 22:13:24,513 - logger_main - INFO - Ejecutando la función actualizar_treeview
+2025-04-30 22:13:36,009 - logger_main - INFO - Ejecutando la función actualizar_treeview
+2025-04-30 22:13:42,077 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:13:44,189 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:13:44,715 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:13:45,169 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:13:45,939 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:13:46,438 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:13:46,957 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:13:47,675 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:13:48,074 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:13:48,417 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:13:48,933 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:14:14,525 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:14:14,921 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:20:10,395 - logger_main - INFO - Se activa el logger del main en la fecha: 30/04/2025 22:20:10
+2025-04-30 22:20:11,847 - logger_main - INFO - Se activa el logger del main en la fecha: 30/04/2025 22:20:11
+2025-04-30 22:20:15,129 - logger_main - INFO - Se seleccionó el tema: Light
+2025-04-30 22:20:16,043 - logger_main - INFO - Ejecutando la función actualizar_treeview
+2025-04-30 22:20:18,051 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:20:18,872 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:20:19,298 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:20:19,717 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:20:20,491 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:20:21,002 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:20:22,275 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:20:22,641 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:20:23,003 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:20:23,418 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:20:23,727 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:20:24,050 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:22:07,546 - logger_main - INFO - Se activa el logger del main en la fecha: 30/04/2025 22:22:07
+2025-04-30 22:22:10,587 - logger_main - INFO - Ejecutando la función actualizar_treeview
+2025-04-30 22:22:12,425 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:22:13,235 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:22:13,973 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:22:14,403 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:22:15,373 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:22:15,777 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:22:16,320 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:22:16,813 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:22:17,342 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:22:22,053 - logger_main - INFO - Ejecutando la función modificacion
+2025-04-30 22:22:22,053 - logger_main - INFO - Ejecutando la función limpiar_producto
+2025-04-30 22:22:22,054 - logger_main - ERROR - Error en el campo 'Producto'
+2025-04-30 22:22:25,345 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:22:26,799 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:22:29,142 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:22:31,196 - logger_main - INFO - Ejecutando la función baja
+2025-04-30 22:22:31,226 - logger_main - INFO - Ejecutando la función actualizar_treeview
+2025-04-30 22:22:31,227 - logger_main - INFO - Se eliminó el producto Serum de la base de datos
+2025-04-30 22:22:31,227 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:22:32,791 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:22:39,945 - logger_main - INFO - Ejecutando la función alta
+2025-04-30 22:22:39,973 - logger_main - INFO - Se agregó el producto Crema a la base de datos
+2025-04-30 22:22:39,973 - logger_main - INFO - Ejecutando la función actualizar_treeview
+2025-04-30 22:22:39,974 - logger_main - INFO - Ejecutando la función limpiar_datos
+2025-04-30 22:22:39,974 - logger_main - INFO - Se limpiaron los entrys
+2025-04-30 22:22:39,975 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:24:39,878 - logger_main - INFO - Se activa el logger del main en la fecha: 30/04/2025 22:24:39
+2025-04-30 22:24:41,693 - logger_main - INFO - Ejecutando la función actualizar_treeview
+2025-04-30 22:24:43,018 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:24:43,693 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:24:44,283 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:24:45,055 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:24:46,184 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:24:46,943 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:24:47,951 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:27:08,271 - logger_main - INFO - Se activa el logger del main en la fecha: 30/04/2025 22:27:08
+2025-04-30 22:27:09,559 - logger_main - INFO - Ejecutando la función actualizar_treeview
+2025-04-30 22:27:11,287 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:27:12,093 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:27:12,824 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:27:13,457 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:27:13,927 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:27:15,887 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:27:56,666 - logger_main - INFO - Se activa el logger del main en la fecha: 30/04/2025 22:27:56
+2025-04-30 22:27:59,533 - logger_main - INFO - Ejecutando la función actualizar_treeview
+2025-04-30 22:28:00,665 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:28:02,048 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:28:48,142 - logger_main - INFO - Se activa el logger del main en la fecha: 30/04/2025 22:28:48
+2025-04-30 22:28:50,605 - logger_main - INFO - Ejecutando la función actualizar_treeview
+2025-04-30 22:28:51,575 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:31:15,312 - logger_main - INFO - Se activa el logger del main en la fecha: 30/04/2025 22:31:15
+2025-04-30 22:31:16,966 - logger_main - INFO - Ejecutando la función actualizar_treeview
+2025-04-30 22:31:17,967 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:36:24,034 - logger_main - INFO - Se activa el logger del main en la fecha: 30/04/2025 22:36:24
+2025-04-30 22:36:27,125 - logger_main - INFO - Se activa el logger del main en la fecha: 30/04/2025 22:36:27
+2025-04-30 22:36:29,679 - logger_main - INFO - Ejecutando la función actualizar_treeview
+2025-04-30 22:36:30,912 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:38:16,576 - logger_main - INFO - Se activa el logger del main en la fecha: 30/04/2025 22:38:16
+2025-04-30 22:38:19,494 - logger_main - INFO - Ejecutando la función actualizar_treeview
+2025-04-30 22:38:20,387 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:40:41,914 - logger_main - INFO - Se activa el logger del main en la fecha: 30/04/2025 22:40:41
+2025-04-30 22:40:44,396 - logger_main - INFO - Ejecutando la función actualizar_treeview
+2025-04-30 22:40:45,103 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:40:45,986 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:40:46,332 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:40:46,597 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:40:46,861 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:40:47,142 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:40:47,450 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:40:47,758 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:40:48,095 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:40:48,404 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:40:48,782 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:40:49,129 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:40:49,661 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:40:49,967 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:40:50,373 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:41:32,611 - logger_main - INFO - Se activa el logger del main en la fecha: 30/04/2025 22:41:32
+2025-04-30 22:41:36,818 - logger_main - INFO - Ejecutando la función actualizar_treeview
+2025-04-30 22:41:37,462 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:41:37,463 - logger_main - INFO - Se cargaron los entrys con el producto Serum id 4 de la base de datos
+2025-04-30 22:41:38,199 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:41:38,200 - logger_main - INFO - Se cargaron los entrys con el producto Crema id 3 de la base de datos
+2025-04-30 22:41:38,738 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:41:38,739 - logger_main - INFO - Se cargaron los entrys con el producto Serum id 5 de la base de datos
+2025-04-30 22:41:39,144 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:41:39,145 - logger_main - INFO - Se cargaron los entrys con el producto Crema id 6 de la base de datos
+2025-04-30 22:41:39,466 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:41:39,467 - logger_main - INFO - Se cargaron los entrys con el producto Serum id 4 de la base de datos
+2025-04-30 22:41:39,762 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:41:39,763 - logger_main - INFO - Se cargaron los entrys con el producto Crema id 2 de la base de datos
+2025-04-30 22:41:40,246 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:41:40,247 - logger_main - INFO - Se cargaron los entrys con el producto Crema id 2 de la base de datos
+2025-04-30 22:41:40,564 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:41:40,565 - logger_main - INFO - Se cargaron los entrys con el producto Crema id 3 de la base de datos
+2025-04-30 22:41:40,873 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:41:40,873 - logger_main - INFO - Se cargaron los entrys con el producto Serum id 5 de la base de datos
+2025-04-30 22:41:41,283 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:41:41,283 - logger_main - INFO - Se cargaron los entrys con el producto Serum id 4 de la base de datos
+2025-04-30 22:41:41,480 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:41:41,481 - logger_main - INFO - Se cargaron los entrys con el producto Serum id 4 de la base de datos
+2025-04-30 22:41:41,674 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:41:41,675 - logger_main - INFO - Se cargaron los entrys con el producto Crema id 3 de la base de datos
+2025-04-30 22:41:42,094 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:41:42,095 - logger_main - INFO - Se cargaron los entrys con el producto Crema id 3 de la base de datos
+2025-04-30 22:41:42,310 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:41:42,311 - logger_main - INFO - Se cargaron los entrys con el producto Serum id 4 de la base de datos
+2025-04-30 22:41:42,514 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:41:42,515 - logger_main - INFO - Se cargaron los entrys con el producto Crema id 6 de la base de datos
+2025-04-30 22:41:42,743 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:41:42,743 - logger_main - INFO - Se cargaron los entrys con el producto Crema id 6 de la base de datos
+2025-04-30 22:41:42,994 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:41:42,995 - logger_main - INFO - Se cargaron los entrys con el producto Serum id 5 de la base de datos
+2025-04-30 22:41:43,234 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:41:43,235 - logger_main - INFO - Se cargaron los entrys con el producto Serum id 4 de la base de datos
+2025-04-30 22:41:43,430 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:41:43,431 - logger_main - INFO - Se cargaron los entrys con el producto Crema id 3 de la base de datos
+2025-04-30 22:41:43,641 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:41:43,641 - logger_main - INFO - Se cargaron los entrys con el producto Crema id 2 de la base de datos
+2025-04-30 22:42:56,673 - logger_main - INFO - Se activa el logger del main en la fecha: 30/04/2025 22:42:56
+2025-04-30 22:42:58,040 - logger_main - INFO - Ejecutando la función actualizar_treeview
+2025-04-30 22:42:59,836 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:42:59,837 - logger_main - INFO - Se cargaron los entrys con el | Producto: Serum| Id: 4 |de la base de datos
+2025-04-30 22:43:00,910 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:43:00,911 - logger_main - INFO - Se cargaron los entrys con el | Producto: Serum| Id: 5 |de la base de datos
+2025-04-30 22:43:02,850 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:43:02,851 - logger_main - INFO - Se cargaron los entrys con el | Producto: Crema| Id: 3 |de la base de datos
+2025-04-30 22:43:03,754 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:43:03,755 - logger_main - INFO - Se cargaron los entrys con el | Producto: Crema| Id: 2 |de la base de datos
+2025-04-30 22:43:04,232 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:43:04,233 - logger_main - INFO - Se cargaron los entrys con el | Producto: Serum| Id: 5 |de la base de datos
+2025-04-30 22:43:04,766 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:43:04,767 - logger_main - INFO - Se cargaron los entrys con el | Producto: Crema| Id: 6 |de la base de datos
+2025-04-30 22:43:07,311 - logger_main - INFO - Ejecutando la función modificacion
+2025-04-30 22:43:07,313 - logger_main - INFO - Ejecutando la función actualizar_treeview
+2025-04-30 22:43:07,314 - logger_main - INFO - Ejecutando la función limpiar_datos
+2025-04-30 22:43:07,314 - logger_main - INFO - Se limpiaron los entrys
+2025-04-30 22:43:07,314 - logger_main - INFO - Se modificó el producto Crema en la base de datos
+2025-04-30 22:43:07,315 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:43:51,356 - logger_main - INFO - Se activa el logger del main en la fecha: 30/04/2025 22:43:51
+2025-04-30 22:43:52,580 - logger_main - INFO - Ejecutando la función actualizar_treeview
+2025-04-30 22:43:53,969 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:43:53,969 - logger_main - INFO - Se cargaron los entrys con el | Producto: Serum| Id: 4 |de la base de datos
+2025-04-30 22:43:56,936 - logger_main - INFO - Ejecutando la función modificacion
+2025-04-30 22:43:56,944 - logger_main - INFO - Ejecutando la función actualizar_treeview
+2025-04-30 22:43:56,945 - logger_main - INFO - Ejecutando la función limpiar_datos
+2025-04-30 22:43:56,945 - logger_main - INFO - Se limpiaron los entrys
+2025-04-30 22:43:56,945 - logger_main - INFO - Se modificó el producto Serum en la base de datos
+2025-04-30 22:43:56,945 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:47:59,234 - logger_main - INFO - Se activa el logger del main en la fecha: 30/04/2025 22:47:59
+2025-04-30 22:48:00,404 - logger_main - INFO - Ejecutando la función actualizar_treeview
+2025-04-30 22:48:02,022 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:48:02,023 - logger_main - INFO - Se cargaron los entrys con el | Producto: Crema| Id: 3 |de la base de datos
+2025-04-30 22:48:02,488 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:48:02,489 - logger_main - INFO - Se cargaron los entrys con el | Producto: Crema| Id: 2 |de la base de datos
+2025-04-30 22:48:02,836 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:48:02,837 - logger_main - INFO - Se cargaron los entrys con el | Producto: Crema| Id: 3 |de la base de datos
+2025-04-30 22:48:03,156 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:48:03,157 - logger_main - INFO - Se cargaron los entrys con el | Producto: Serum| Id: 5 |de la base de datos
+2025-04-30 22:48:03,625 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 22:48:03,626 - logger_main - INFO - Se cargaron los entrys con el | Producto: Crema| Id: 6 |de la base de datos
+2025-04-30 22:48:10,160 - logger_main - INFO - Ejecutando la función alta
+2025-04-30 22:48:10,166 - logger_main - INFO - Se agregó el producto Crema a la base de datos
+2025-04-30 22:48:10,167 - logger_main - INFO - Ejecutando la función actualizar_treeview
+2025-04-30 22:48:10,167 - logger_main - INFO - Ejecutando la función limpiar_datos
+2025-04-30 22:48:10,167 - logger_main - INFO - Se limpiaron los entrys
+2025-04-30 22:48:10,168 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 23:23:58,399 - logger_main - INFO - Se activa el logger del main en la fecha: 30/04/2025 23:23:58
+2025-04-30 23:23:59,902 - logger_main - INFO - Ejecutando la función actualizar_treeview
+2025-04-30 23:24:01,585 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 23:24:01,586 - logger_main - INFO - Se cargaron los entrys con el | Producto: Crema| Id: 7 |de la base de datos
+2025-04-30 23:24:03,967 - logger_main - INFO - Ejecutando la función alta
+2025-04-30 23:24:04,003 - logger_main - INFO - Se agregó el producto Crema a la base de datos
+2025-04-30 23:24:04,003 - logger_main - INFO - Ejecutando la función actualizar_treeview
+2025-04-30 23:24:04,004 - logger_main - INFO - Ejecutando la función limpiar_datos
+2025-04-30 23:24:04,004 - logger_main - INFO - Se limpiaron los entrys
+2025-04-30 23:24:04,004 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 23:24:09,375 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 23:24:09,376 - logger_main - INFO - Se cargaron los entrys con el | Producto: Crema| Id: 8 |de la base de datos
+2025-04-30 23:24:12,585 - logger_main - INFO - Ejecutando la función baja
+2025-04-30 23:24:12,591 - logger_main - INFO - Ejecutando la función actualizar_treeview
+2025-04-30 23:24:12,592 - logger_main - INFO - Se eliminó el producto Crema de la base de datos
+2025-04-30 23:24:12,592 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 23:26:55,378 - logger_main - INFO - Se activa el logger del main en la fecha: 30/04/2025 23:26:55
+2025-04-30 23:26:57,290 - logger_main - INFO - Ejecutando la función actualizar_treeview
+2025-04-30 23:26:59,655 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 23:26:59,656 - logger_main - INFO - Se cargaron los entrys con el | Producto: Serum| Id: 4 |de la base de datos
+2025-04-30 23:27:04,540 - logger_main - INFO - Ejecutando la función modificacion
+2025-04-30 23:27:04,546 - logger_main - INFO - Ejecutando la función actualizar_treeview
+2025-04-30 23:27:04,547 - logger_main - INFO - Ejecutando la función limpiar_datos
+2025-04-30 23:27:04,547 - logger_main - INFO - Se limpiaron los entrys
+2025-04-30 23:27:04,547 - logger_main - INFO - Se modificó el producto Serum en la base de datos
+2025-04-30 23:27:04,547 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 23:27:07,121 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 23:27:07,121 - logger_main - INFO - Se cargaron los entrys con el | Producto: Crema| Id: 3 |de la base de datos
+2025-04-30 23:27:09,722 - logger_main - INFO - Ejecutando la función alta
+2025-04-30 23:27:09,728 - logger_main - INFO - Se agregó el producto Crema a la base de datos
+2025-04-30 23:27:09,729 - logger_main - INFO - Ejecutando la función actualizar_treeview
+2025-04-30 23:27:09,729 - logger_main - INFO - Ejecutando la función limpiar_datos
+2025-04-30 23:27:09,729 - logger_main - INFO - Se limpiaron los entrys
+2025-04-30 23:27:09,730 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 23:27:12,085 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 23:27:12,086 - logger_main - INFO - Se cargaron los entrys con el | Producto: Crema| Id: 6 |de la base de datos
+2025-04-30 23:27:14,447 - logger_main - INFO - Ejecutando la función baja
+2025-04-30 23:27:14,452 - logger_main - INFO - Ejecutando la función actualizar_treeview
+2025-04-30 23:27:14,453 - logger_main - INFO - Se eliminó el producto Crema de la base de datos
+2025-04-30 23:27:14,453 - logger_main - INFO - Ejecutando la función cargar_entrys
+2025-04-30 23:27:16,698 - logger_main - INFO - Se seleccionó la base: MySQL
+2025-04-30 23:27:18,486 - logger_main - INFO - Se seleccionó la base: Postgres
+2025-04-30 23:27:20,485 - logger_main - INFO - Se seleccionó la base: SQLite3 (default)
+2025-04-30 23:27:21,475 - logger_main - INFO - Ejecutando la función actualizar_treeview
+2025-04-30 23:27:22,806 - logger_main - INFO - Se seleccionó la base: MySQL
+2025-04-30 23:27:23,785 - logger_main - INFO - Ejecutando la función actualizar_treeview
+2025-04-30 23:27:25,102 - logger_main - INFO - Se seleccionó la base: SQLite3 (default)
+2025-04-30 23:27:26,370 - logger_main - INFO - Se seleccionó el tema: Light
+2025-04-30 23:27:27,363 - logger_main - INFO - Se seleccionó el tema: Black

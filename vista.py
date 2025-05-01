@@ -11,13 +11,15 @@ from modelo import InteraccionBD
 
 from widgets import MiBoton, MiEntry, MiLabel
 
+from observador import Subject
+
 objeto = Abcm()
 objetoBase = InteraccionBD()
 
 from logger_config import logger_main, logger_bd
 
-class Vista():
-    def __init__(self,window):
+class Vista(Subject):
+    def __init__(self,window, gestor_tema):
         self.widgets = []
         """
         El constructor inicializa el *root* de tkinter y lo configuro, con su *título*, *background*, *buttons*, *treeview*, *labels*, una *combobox* y los *entrys*.
@@ -26,7 +28,8 @@ class Vista():
         self.root.title("PS COSMÉTICA")
         self.root.resizable(0, 0)
         self.root.config(bg="#F0C266")
-
+        self.gestor_tema = gestor_tema
+        
         # BASE DE DATOS Y TABLA----------------------------------------------------------------
         """
         El botón: *boton_db* permite conectarse a la *base de datos* previamente a realizar cualquier acción.
@@ -35,6 +38,7 @@ class Vista():
             self.root,
             text="Conectarse a la Base de Datos",
             command=lambda:self.conectar_base(),
+            gestor_tema=self.gestor_tema,
         )
         self.boton_db.grid(column=1, row=1)
         self.widgets.append(self.boton_db)
@@ -45,12 +49,13 @@ class Vista():
             self.root,
             text="Crear Tabla Productos",
             command=lambda:self.crear_tabla(),
+            gestor_tema=gestor_tema,
         )
         self.boton_table.grid(column=2, row=1)
         self.widgets.append(self.boton_table)
 
         # INGRESO DE DATOS------------------------------------------------------------------------
-        self.labe1_p = MiLabel(self.root, text="Producto:")
+        self.labe1_p = MiLabel(self.root, text="Producto:", gestor_tema=self.gestor_tema)
         self.labe1_p.grid(row=2)
         self.widgets.append(self.labe1_p)
         self.combo = ttk.Combobox(
@@ -65,11 +70,11 @@ class Vista():
             ],
         )
         self.combo.grid(column=2, row=3, padx=5, pady=5, sticky="w")
-        self.labe1_l = MiLabel(self.root, text="Laboratorio:")
+        self.labe1_l = MiLabel(self.root, text="Laboratorio:", gestor_tema=self.gestor_tema)
         self.labe1_l.grid(row=3)
         self.widgets.append(self.labe1_l)
 
-        self.labe1_c = MiLabel(self.root, text="Cantidad:")
+        self.labe1_c = MiLabel(self.root, text="Cantidad:", gestor_tema=self.gestor_tema)
         self.labe1_c.grid(row=4)
         self.widgets.append(self.labe1_c)
 
@@ -77,11 +82,11 @@ class Vista():
         self.laboratorio = StringVar()
         self.cantidad = StringVar()
 
-        self.producto_e = MiEntry(self.root, textvariable=self.producto)
+        self.producto_e = MiEntry(self.root, textvariable=self.producto, gestor_tema=self.gestor_tema)
         self.producto_e.grid(column=2, row=2)
         self.widgets.append(self.producto_e)
 
-        self.cantidad_e = MiEntry(self.root, textvariable=self.cantidad)
+        self.cantidad_e = MiEntry(self.root, textvariable=self.cantidad, gestor_tema=self.gestor_tema)
         self.cantidad_e.grid(column=2, row=4)
         self.widgets.append(self.cantidad_e)
         # TREEVIEW------------------------------------------------------------------------
@@ -110,7 +115,8 @@ class Vista():
         self.boton1 = MiBoton(
             self.root, 
             text="Alta",
-            command=lambda: self.alta())
+            command=lambda: self.alta(),
+            gestor_tema=self.gestor_tema)
         self.boton1.grid(column=0,row=2)
         self.widgets.append(self.boton1)
         """
@@ -120,6 +126,7 @@ class Vista():
             self.root,
             text="Baja",
             command=lambda: self.baja(),
+            gestor_tema=self.gestor_tema
         )
         self.boton2.grid(column=0,row=3)
         self.widgets.append(self.boton2)
@@ -130,6 +137,7 @@ class Vista():
             self.root,
             text="Modificación",
             command=lambda: self.modificacion(),
+            gestor_tema=self.gestor_tema
         )
         self.boton3.grid(column=0,row=4,)
         self.widgets.append(self.boton3)
@@ -167,7 +175,16 @@ class Vista():
         def envoltura(*args, **kwargs):
             resultado = funcion(*args, **kwargs)
             logger_bd.info(f"Acción: {funcion.__name__} ejecutada por el usuario")
+            if funcion.__name__=="alta" or funcion.__name__=="baja"or funcion.__name__=="modificacion":
+                logger_bd.info(f"Producto: {resultado[0]}")
+                logger_bd.info(f"Laboratorio: {resultado[1]}")
+                logger_bd.info(f"Cantidad: {resultado[2]}")
+            elif funcion.__name__=="conectar_base":
+                logger_bd.info(f"Conexión a la base de datos")
+            elif funcion.__name__=="crear_tabla":
+                logger_bd.info(f"Creación de la tabla 'Productos'")
             return resultado
+        
         return envoltura
     
     @loggear_en_bd
@@ -185,9 +202,11 @@ class Vista():
         seleccion = self.combo_temas.get()
         logger_main.info(f"Se seleccionó el tema: {seleccion}")
         self.modificar_root(seleccion)
-        for x in self.widgets:
+        # Se le pasa el tema al gestor de temas para que lo modifique en todos los widgets 
+        self.gestor_tema.cambiar_tema(seleccion)
+        """for x in self.widgets:
             x.modificar(seleccion)
-    
+        """
     def modificar_root(self, seleccion):
         if seleccion == "Crema (default)":
             self.root.config(bg="#F0C266",)
@@ -196,7 +215,7 @@ class Vista():
         elif seleccion == "Black":
             self.root.config(bg="#1A1E48")
         
-    def seleccion(self,event):
+    def seleccion(self, event):
         """
         La funcion *seleccion* permite que los *entrys* se rellenen con la información de la *base de datos* correspondiente al elemento seleccionado del *treeview*.
         """    
@@ -214,6 +233,7 @@ class Vista():
         """
         retorno = objeto.alta(self.tv, self.producto, self.combo, self.cantidad)
         messagebox.showinfo("Alta", retorno)
+        return (self.producto.get(), self.combo.get(), self.cantidad.get())
     @loggear_en_bd
     def baja(self):
         """
@@ -224,11 +244,12 @@ class Vista():
             resultado = messagebox.askquestion("Baja", "¿Estas seguro de querer eliminar este producto?")
             if resultado == "yes":
                 retorno = objeto.baja(self.tv, valor)
-                messagebox.showinfo("Baja", retorno)
+                messagebox.showinfo("Baja", retorno[0])
             else:
                 messagebox.showinfo("Acción cancelada", "No se eliminó el producto")
         else:
             messagebox.showinfo("Acción cancelada", "Debe seleccionar un producto a eliminar")
+        return retorno[1], retorno[2], retorno[3]
     @loggear_en_bd
     def modificacion(self):
         """
@@ -239,11 +260,12 @@ class Vista():
             resultado = messagebox.askquestion("Modificación", "¿Estas seguro de querer modificar este producto?")
             if resultado == "yes":
                 retorno = objeto.modificacion(self.tv, self.producto, self.combo, self.cantidad,valor)
-                messagebox.showinfo("Modificación", retorno)
+                messagebox.showinfo("Modificación", retorno[0])
             else:
                 messagebox.showinfo("Acción cancelada", "No se modificó el producto")
         else:
             messagebox.showinfo("Acción cancelada", "Debe seleccionar un producto a modificar")
+        return retorno[1], retorno[2], retorno[3]
     # ------------------------------------------------------------------------
     @loggear_en_bd    
     def conectar_base(self):
