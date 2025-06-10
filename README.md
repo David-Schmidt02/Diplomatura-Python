@@ -54,6 +54,6 @@ El proyecto sigue una arquitectura inspirada en **Modelo-Vista-Controlador (MVC)
 - **Registro de acciones:** Todas las operaciones relevantes quedan registradas en archivos de log y en archivos de texto.
 - **Interfaz intuitiva:** Uso de Tkinter y widgets personalizados para una experiencia de usuario amigable.
 ---
-⚡ **David Schmidt** ⚡  
-Desarrollador Python | Apasionado por la calidad y la arquitectura de software | Diplomatura en Python Avanzado
----
+**⚡ David Schmidt ⚡**  
+*Desarrollador Python | Explorador de datos | Apasionado por los Pokémon*
+
